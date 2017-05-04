@@ -1,0 +1,126 @@
+body, html {
+  /*background: #0194B7;*/
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  font-family: Verdana, sans-serif;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h5, p, a {
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.main {
+  padding-top: 75px;
+  padding: 75px 0px 30px;
+  flex-direction: column;
+}
+
+.main .me {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+
+.main .name {
+  margin: 20px 0px 10px;
+}
+
+.main .job-title {
+  color: #F1F1F1;
+  position: relative;
+}
+
+.main .job-title .company {
+  color: #be4e49;
+}
+
+.main .job-title::after {
+   content: "";
+   background: #f1f1f1;
+   height: 2px;
+   display: block;
+   position: absolute;
+   left: -20px;
+   right: -20px;
+   bottom: -10px;
+}
+
+.column {
+  flex-direction: column;
+  margin: 20px 0px 30px;
+}
+
+.title {
+  padding-bottom: 15px;
+}
+
+.list {
+  display: flex;
+  max-width: 1020px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.list .item {
+  max-width: 150px;
+  margin: 10px 0;
+}
+
+.list .item .item-image-wrapper {
+  background: #c8c7cc;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.list .item .item-image {
+  width: auto;
+  height: 100%;
+}
+
+.list .item .title {
+  padding: 10px 0px;
+}
+
+.list .item .list-icon {
+  font-size: 30px;
+}
+
+
+.presentations {
+  padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+.contacts {
+  align-self: flex-end;
+  padding: 10px 0px;
+}
+
+.contacts .fa{
+  font-size: 45px;
+  padding: 0 20px;
+}
