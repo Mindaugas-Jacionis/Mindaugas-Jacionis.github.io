@@ -1,6 +1,4 @@
 body, html {
-  /*background: #0194B7;*/
-  /*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
   font-family: Verdana, sans-serif;
   overflow-x: hidden;
   margin: 0;
@@ -45,27 +43,18 @@ header, footer {
 
 .header .name {
   margin: 20px 0px 10px;
+  padding: 0px 20px;
 }
 
 .header .job-title {
   color: #F1F1F1;
   position: relative;
+  padding: 0px 40px;
 }
 
 .header .job-title .company {
   color: #be4e49;
 }
-
-/*.header .job-title::after {
-   content: "";
-   background: #f1f1f1;
-   height: 2px;
-   display: block;
-   position: absolute;
-   left: -20px;
-   right: -20px;
-   bottom: -10px;
-}*/
 
 .main {
   background: #efeff4;
@@ -82,13 +71,14 @@ header, footer {
    height: 2px;
    display: block;
    position: absolute;
-   left: -30px;
-   right: -30px;
+   left: 15px;
+   right: 15px;
    bottom: 0px;
 }
 
 .main .section .title:first-child {
   margin-bottom: 20px;
+  padding: 0px 40px 10px;
 }
 
 .column {
@@ -148,7 +138,6 @@ header, footer {
   color: #c8c7cc;
 }
 
-
 .presentations {
   padding-top: 30px;
 }
@@ -168,10 +157,6 @@ header, footer {
   .list {
     max-width: 560px;
   }
-
-  .title, .job-title {
-    max-width: 500px;
-  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -179,21 +164,4 @@ header, footer {
     max-width: 340px;
     justify-content: center;
   }
-
-  .title, .job-title {
-    max-width: 320px;
-  }
 }
-
-@media only screen and (max-width: 400px) {
-  .title, .job-title {
-    max-width: 250px;
-  }
-}
-
-/*@media only screen and (max-width: 330px) {
-  .list {
-    max-width: 200px;
-    justify-content: center;
-  }
-}*/
