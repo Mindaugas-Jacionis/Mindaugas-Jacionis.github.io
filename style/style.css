@@ -1,8 +1,9 @@
 body, html {
   /*background: #0194B7;*/
-  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  /*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
   font-family: Verdana, sans-serif;
   overflow-x: hidden;
+  margin: 0;
 }
 
 ul, li {
@@ -17,6 +18,10 @@ h1, h2, h3, h5, p, a {
   color: #fff;
 }
 
+header, footer {
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
 .section {
   display: flex;
   flex-wrap: wrap;
@@ -25,33 +30,33 @@ h1, h2, h3, h5, p, a {
   justify-content: center;
 }
 
-.main {
+.header {
   padding-top: 75px;
   padding: 75px 0px 30px;
   flex-direction: column;
 }
 
-.main .me {
+.header .me {
   border-radius: 100%;
   overflow: hidden;
   width: 200px;
   height: 200px;
 }
 
-.main .name {
+.header .name {
   margin: 20px 0px 10px;
 }
 
-.main .job-title {
+.header .job-title {
   color: #F1F1F1;
   position: relative;
 }
 
-.main .job-title .company {
+.header .job-title .company {
   color: #be4e49;
 }
 
-.main .job-title::after {
+/*.header .job-title::after {
    content: "";
    background: #f1f1f1;
    height: 2px;
@@ -60,15 +65,40 @@ h1, h2, h3, h5, p, a {
    left: -20px;
    right: -20px;
    bottom: -10px;
+}*/
+
+.main {
+  background: #efeff4;
+  padding: 30px 0px;
+}
+
+.main h1, .main h2, .main h3, .main h5, .main p, .main a {
+  color: #6d6d72;
+}
+
+.main .section .title:first-child::after {
+   content: "";
+   background: #6d6d72;
+   height: 2px;
+   display: block;
+   position: absolute;
+   left: -30px;
+   right: -30px;
+   bottom: 0px;
+}
+
+.main .section .title:first-child {
+  margin-bottom: 20px;
 }
 
 .column {
   flex-direction: column;
-  margin: 20px 0px 30px;
+  padding: 20px 0px 30px;
 }
 
 .title {
   padding-bottom: 15px;
+  position: relative;
 }
 
 .list {
@@ -80,30 +110,42 @@ h1, h2, h3, h5, p, a {
 }
 
 .list .item {
-  max-width: 150px;
-  margin: 10px 0;
+  max-width: 250px;
+  margin: 20px 0;
   display: inline-block;
+  background: #fff;
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
+  border-radius: 10px;
+  overflow: hidden;
+  border-color: #c8c7cc;
+  text-align: left;
+  padding: 0px 0px 10px;
 }
 
 .list .item .item-image-wrapper {
   background: #c8c7cc;
-  width: 150px;
+  width: 250px;
   height: 150px;
-  overflow: hidden;
-  border-radius: 10px;
+  align-items: center;
+  display: flex;
 }
 
 .list .item .item-image {
   width: auto;
   height: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .list .item .title {
-  padding: 10px 0px;
+  padding: 10px 10px;
 }
 
 .list .item .list-icon {
   font-size: 30px;
+  padding: 0px 10px;
+  color: #c8c7cc;
 }
 
 
@@ -113,7 +155,7 @@ h1, h2, h3, h5, p, a {
 
 .contacts {
   align-self: flex-end;
-  padding: 50px 0px 10px;
+  padding: 20px 0px 20px;
 }
 
 .contacts .fa{
@@ -126,23 +168,32 @@ h1, h2, h3, h5, p, a {
   .list {
     max-width: 560px;
   }
+
+  .title, .job-title {
+    max-width: 500px;
+  }
 }
 
 @media only screen and (max-width: 580px) {
   .list {
     max-width: 340px;
+    justify-content: center;
   }
-}
 
-@media only screen and (max-width: 500px) {
   .title, .job-title {
     max-width: 320px;
   }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 400px) {
+  .title, .job-title {
+    max-width: 250px;
+  }
+}
+
+/*@media only screen and (max-width: 330px) {
   .list {
     max-width: 200px;
     justify-content: center;
   }
-}
+}*/
