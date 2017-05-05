@@ -2,6 +2,7 @@ body, html {
   /*background: #0194B7;*/
   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   font-family: Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
 ul, li {
@@ -130,5 +131,18 @@ h1, h2, h3, h5, p, a {
 @media only screen and (max-width: 580px) {
   .list {
     max-width: 340px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title, .job-title {
+    max-width: 320px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .list {
+    max-width: 200px;
+    justify-content: center;
   }
 }
