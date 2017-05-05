@@ -18,6 +18,7 @@ h1, h2, h3, h5, p, a {
 
 .section {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -71,14 +72,16 @@ h1, h2, h3, h5, p, a {
 
 .list {
   display: flex;
-  max-width: 1020px;
+  max-width: 860px;
   width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .list .item {
   max-width: 150px;
   margin: 10px 0;
+  display: inline-block;
 }
 
 .list .item .item-image-wrapper {
@@ -107,20 +110,25 @@ h1, h2, h3, h5, p, a {
   padding-top: 30px;
 }
 
-
-
-
-
-
-
-
-
 .contacts {
   align-self: flex-end;
-  padding: 10px 0px;
+  padding: 50px 0px 10px;
 }
 
 .contacts .fa{
   font-size: 45px;
   padding: 0 20px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 880px) {
+  .list {
+    max-width: 560px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .list {
+    max-width: 340px;
+  }
 }
