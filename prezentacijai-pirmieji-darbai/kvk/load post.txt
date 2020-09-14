@@ -1,1 +1,0 @@
-http://codex.wordpress.org/Template_Tags/get_posts
